@@ -1,1 +1,7 @@
 @import '~bootstrap/scss/bootstrap';
+
+.grid {
+    h1 {
+        color: red($color: #000000);
+    }
+}
