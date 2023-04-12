@@ -10,7 +10,7 @@
         @foreach ($trains as $train)
 
         <div class="card-train">
-            <h3>
+            <h3 class="text-center">
                 {{ $train->Azienda }}
             </h3>
             <div class="row-stasion">
@@ -41,6 +41,8 @@
         border: 3px solid red;
         padding: 15px;
         border-radius: 8px;
+        background-color: white;
+        opacity: 0.9;
     }
 
     .row-stasion,
@@ -49,6 +51,20 @@
         justify-content: space-between;
         flex-wrap: nowrap;
         align-items: center;
+    }
+
+    main,
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    main {
+        background-image: url('https://th.bing.com/th/id/OIP.27wpmy2VwH4DKsgmzRwFcAHaEc?pid=ImgDet&rs=1');
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: center;
     }
 </style>
 
