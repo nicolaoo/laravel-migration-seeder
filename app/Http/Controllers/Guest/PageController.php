@@ -9,13 +9,14 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function homePage(){
+    public function homePage()
+    {
         $trains = Train::all();
 
-        $data=[
+        $data = [
             'trains' => $trains
         ];
 
-        return view ('welcome', $data)
+        return view('welcome', $data);
     }
 }
