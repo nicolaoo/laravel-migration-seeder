@@ -17,13 +17,13 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('Azienda', 50);
-            $table->string('stazione di partenza', 100);
-            $table->string('stazione di arrivo', 100);
-            $table->time('orario di partenza');
-            $table->time('orario di arrivo');
-            $table->unsignedSmallInteger('codice treno');
-            $table->unsignedTinyInteger('Numero Carrozze');
-            $table->unsignedTinyInteger('In Orario')->default(0);
+            $table->string('stazione_di_partenza', 100);
+            $table->string('stazione_di_arrivo', 100);
+            $table->time('orario_di_partenza');
+            $table->time('orario_di_arrivo');
+            $table->unsignedSmallInteger('codice_treno');
+            $table->unsignedTinyInteger('Numero_Carrozze');
+            $table->unsignedTinyInteger('In_Orario')->default(0);
             $table->unsignedTinyInteger('Cancellato')->default(0);
         });
     }
